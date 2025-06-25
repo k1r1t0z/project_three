@@ -1,0 +1,90 @@
+.catalog
+    padding-bottom: 80px
+    &__tabs
+        display: flex
+        justify-content: center
+        align-content: center
+        list-style-type: none
+        cursor: pointer
+    &__tab
+        font-weight: 400
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+        color: #6b6b6b
+        width: 220px
+        height: 50px
+        border: 2px solid rgba(0,0,0,0.1)
+        margin: 50px 5px 0 5px
+        line-height: 48px
+        transform: skew(-25deg)
+        transition: 0.5s
+        &:hover
+            box-shadow: 0 20px 40px 0 #c70101
+        div
+            transform: skew(25deg)
+        &__active
+            background-color: #c70101
+            color: #fff
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 57px
+    &__card
+        width: 303px
+        min-height: 442px
+        border: 2px solid #e8e8e8
+        padding: 20px
+        &:nth-child(n+4)
+            margin-top: 19px
+            
+    &__img
+        width: 140px
+        min-height: 200px
+        margin: 0 auto
+        img 
+            width: 100%
+    &__subtitle
+        font-weight: 700
+        font-size: 16px
+        text-align: center
+        color: #0d0d0d
+    &__descr
+        font-weight: 300
+        font-size: 14px
+        text-align: center
+        color: #0d0d0d
+    &__link
+        display: block
+        margin: 0 auto
+        margin-top: 10px
+        font-weight: 500
+        font-size: 14px
+        line-height: 100%
+        text-decoration: underline
+        text-decoration-skip-ink: none
+        text-align: center
+        color: #c70101
+    &__footer
+        display: flex
+        justify-content: space-between 
+        align-items: center
+        margin-top: 20px
+    &__prices
+        display: flex
+        flex-direction: column
+        align-self: flex-end
+    &__old
+        font-weight: 300
+        font-size: 14px
+        line-height: 100%
+        text-decoration: line-through
+        color: #555
+    &__price
+        font-weight: 700
+        font-size: 20px
+        line-height: 100%
+        color: #050505
+        text-decoration: none
+        
